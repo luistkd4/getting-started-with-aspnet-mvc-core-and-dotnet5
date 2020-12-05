@@ -8,11 +8,11 @@ To complete code from this blog you need Visual studio 16.8 for windows and mac 
 
 Important Files
 
-1. **(https://github.com/geeksarray/getting-started-with-aspnet-mvc-core-and-dotnet5/blob/main/Areas/GeeksEmployee/Controllers/GeeksEmployee.cs)[Geeks Employee Controller]** - to has Index action method to use Employee Model and return to View.
+1. **[Geeks Employee Controller](https://github.com/geeksarray/getting-started-with-aspnet-mvc-core-and-dotnet5/blob/main/Areas/GeeksEmployee/Controllers/GeeksEmployee.cs)** - to has Index action method to use Employee Model and return to View.
 
-1. **(https://github.com/geeksarray/getting-started-with-aspnet-mvc-core-and-dotnet5/blob/main/Areas/GeeksEmployee/Models/EmployeeModel.cs)[Employee Model]** - to validate employee data using Data Annotation
+1. **[Employee Model](https://github.com/geeksarray/getting-started-with-aspnet-mvc-core-and-dotnet5/blob/main/Areas/GeeksEmployee/Models/EmployeeModel.cs)** - to validate employee data using Data Annotation
 
-1. **(https://github.com/geeksarray/getting-started-with-aspnet-mvc-core-and-dotnet5/blob/main/Areas/GeeksEmployee/Views/GeeksEmployee/Index.cshtml)[Index view]** - to show employee details on browser.
+1. **[Index view](https://github.com/geeksarray/getting-started-with-aspnet-mvc-core-and-dotnet5/blob/main/Areas/GeeksEmployee/Views/GeeksEmployee/Index.cshtml)** - to show employee details on browser.
 
 When you implement code from this blog, you will see output like this
 
