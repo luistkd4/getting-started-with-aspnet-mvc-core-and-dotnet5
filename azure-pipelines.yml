@@ -42,5 +42,6 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(System.DefaultWorkingDirectory)/**/*.zip' 
-    artifactName: 'myWebsiteName'
+    targetPath: '*'
+    artifact: 'myWebsiteName'
+    publishLocation: 'pipeline'
