@@ -31,10 +31,6 @@ steps:
     command: 'publish'
     publishWebProjects: true
     
-- task: PublishPipelineArtifact@1
-  inputs:
-    targetPath: '$(System.DefaultWorkingDirectory)/**/*.zip' 
-    artifactName: 'myWebsiteName'
 
 - task: AzureWebApp@1
   inputs:
@@ -44,3 +40,7 @@ steps:
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     runtimeStack: 'DOTNETCORE|5.0'
 
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(System.DefaultWorkingDirectory)/**/*.zip' 
+    artifactName: 'myWebsiteName'
