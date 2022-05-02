@@ -42,5 +42,5 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '*' 
+    targetPath: '/home/miguel/azure-agent-sub/_work/2/s/obj/Release/net5.0' 
     artifactName: 'myWebsiteName'
