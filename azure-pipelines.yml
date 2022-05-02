@@ -42,6 +42,5 @@ steps:
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '*'
-    artifact: 'myWebsiteName'
-    publishLocation: 'pipeline'
+    targetPath: '*' 
+    artifactName: 'myWebsiteName'
