@@ -33,7 +33,7 @@ steps:
     
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)' 
+    targetPath: '$(System.DefaultWorkingDirectory)/**/*.zip' 
     artifactName: 'myWebsiteName'
 
 - task: AzureWebApp@1
