@@ -17,8 +17,6 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
-- download: current
-  artifact: drop
 
 - task: ArchiveFiles@2
   inputs:
@@ -32,6 +30,11 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
+    
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)' 
+    artifactName: 'myWebsiteName'
 
 - task: AzureWebApp@1
   inputs:
@@ -40,3 +43,4 @@ steps:
     appName: 'meuappsvc'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     runtimeStack: 'DOTNETCORE|5.0'
+
